@@ -1,32 +1,53 @@
 # AKTIEN-MONITOR Landing Page
 
-This is a modern, responsive landing page for AKTIEN-MONITOR created using Bootstrap 5.
+A modern, responsive landing page for AKTIEN-MONITOR created using Bootstrap 5.
+
+## Live Demo
+
+Visit the live demo here: [AKTIEN-MONITOR Landing Page](https://artin925.github.io/challenge-stock-monitoring-website/)
 
 ## Features
 
 - Fully responsive design that works on all devices (desktop, tablet, mobile)
 - Modern UI with animations and hover effects
+- Interactive highlight elements with animated counters
+- Newsletter previews with 3D hover effects
+- Rating section with social proof
 - Built with Bootstrap 5 for reliable responsive behavior
 - Custom CSS for unique styling
+- JavaScript animations and interaction effects
 - Optimized for performance
+
+## Screenshots
+
+(Screenshots will be added later)
 
 ## Structure
 
 - `index.html` - The main HTML file
 - `styles.css` - Custom CSS styles
+- `script.js` - JavaScript for animations and interactions
 - `images/` - Directory containing images used in the project
+- `futuristic-design/` - Alternative design concept (experimental)
 
 ## Technologies Used
 
 - HTML5
 - CSS3
+- JavaScript
 - Bootstrap 5
 - Font Awesome icons
 - Google Fonts
 
-## How to Run
+## How to Run Locally
 
-Simply open the `index.html` file in any modern web browser.
+1. Clone this repository
+2. Open the `index.html` file in any modern web browser
+3. Alternatively, run a local server:
+   ```
+   python3 -m http.server 8000
+   ```
+   Then visit `http://localhost:8000` in your browser
 
 ## Responsive Breakpoints
 
