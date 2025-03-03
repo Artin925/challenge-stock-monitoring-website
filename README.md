@@ -4,7 +4,9 @@ A modern, responsive landing page for AKTIEN-MONITOR created using Bootstrap 5.
 
 ## Live Demo
 
-Visit the live demo here: [AKTIEN-MONITOR Landing Page](https://artin925.github.io/challenge-stock-monitoring-website/)
+Visit the live demos here:
+- [Main Design](https://artin925.github.io/challenge-stock-monitoring-website/)
+- [Futuristic Design](https://artin925.github.io/challenge-stock-monitoring-website/futuristic-design/)
 
 ## Features
 
