@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKTIEN-MONITOR - Geballtes Börsenwissen</title>
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .action-button {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .ripple {
+            position: absolute;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.7);
+            transform: scale(0);
+            animation: ripple-animation 0.6s linear;
+            pointer-events: none;
+        }
+        
+        @keyframes ripple-animation {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+        
+        .benefit-item {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .benefit-item.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .newsletter-container {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .newsletter-container.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        @keyframes blink-animation {
+            0% { opacity: 0.5; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.1); }
+            100% { opacity: 0.5; transform: scale(1); }
+        }
+        
+        .highlight {
+            background-color: #FF8C00; 
+            color: #FFFFFF;
+            font-weight: bold;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            display: inline-block;
+            white-space: nowrap;
+            overflow: visible;
+            box-shadow: 0 0 10px rgba(255, 140, 0, 0.7);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .highlight-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            max-width: 900px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+        
+        .highlight-box p {
+            color: #FFFFFF !important; 
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <section class="hero-section text-center py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <h1 class="display-4 fw-bold mb-4">Der AKTIEN-MONITOR</h1>
+                        <h2 class="mb-4">Sichern Sie sich jetzt das geballte Wissen von über 100 Börsendiensten!</h2>
+               
+                        <div class="highlight-box my-4 py-3 mx-auto">
+                            <p class="lead mb-0" >Regelmäßige <span class="highlight">Renditen von bis zu +3.308,59 %</span>, <span class="highlight">bis zu +3.362,53 %</span> oder <span class="highlight">bis zu +6.692,61 %</span> mit den bestbewerteten und lukrativsten Aktien.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10">
+                        <div class="newsletter-container my-5 position-relative">
+                            <div class="newsletter-image d-flex justify-content-center">
+                                <div class="newsletter red-edition me-2 me-md-4">
+                                    <div class="newsletter-content">
+                                        <div class="newsletter-header">AKTIEN-MONITOR</div>
+                                        <div class="newsletter-body">
+                                            <div class="text-lines"></div>
+                                            <div class="text-lines"></div>
+                                            <div class="text-lines"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="newsletter blue-edition ms-2 ms-md-4">
+                                    <div class="newsletter-content">
+                                        <div class="newsletter-header">AKTIEN-MONITOR</div>
+                                        <div class="newsletter-body">
+                                            <div class="text-lines"></div>
+                                            <div class="text-lines"></div>
+                                            <div class="text-lines"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="btn btn-primary btn-lg action-button mb-5 pulse-animation">
+                            <i class="fas fa-mouse-pointer me-2"></i>Jetzt HIER klicken und Rabatt sichern!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="benefits-section py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="benefit-item mb-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-1 text-center text-md-start mb-3 mb-md-0">
+                                    <i class="fas fa-chart-line fa-2x"></i>
+                                </div>
+                                <div class="col-md-11">
+                                    <h3>Das Wissen von über 100 Börsenbriefen</h3>
+                                    <p class="mb-0">Geben Sie sich nicht mit nur einem Börsenbrief zufrieden, sondern greifen Sie mit der Hilfe des AKTIEN-MONITORs auf das geballte Wissen der 100 weltweit besten deutschsprachigen Börsenbriefe aus aller Welt zurück – ohne diese selbst abonnieren zu müssen!</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="benefit-item mb-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-1 text-center text-md-start mb-3 mb-md-0">
+                                    <i class="fas fa-trophy fa-2x"></i>
+                                </div>
+                                <div class="col-md-11">
+                                    <h3>Jürgen Schmitt selektiert für Sie die Crème de la Crème der Aktien-Empfehlung</h3>
+                                    <p class="mb-0">Von Deutschlands besten Analysten: bis zu +3.308,59 %, +3.362,53 % oder +6.692,61 % sind dabei keine Seltenheit. Erhalten Sie nicht einfach irgendwelche Investment-Vorschläge – sichern Sie sich die vielversprechendsten Empfehlungen von Deutschlands Aktien-Elite.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cta-section text-center py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="mb-4">Sichern Sie sich Ihren Wissensvorsprung!</h2>
+                        <a href="#" class="btn btn-primary btn-lg action-button pulse-animation">
+                            <i class="fas fa-check-circle me-2"></i>Jetzt AKTIEN-MONITOR sichern!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="rating-section py-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="rating-box text-center p-3">
+                            <div class="d-flex justify-content-center align-items-center mb-2">
+                                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_74x24dp.png" alt="Google" class="me-2">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <div class="rating-info">
+                                <span class="rating-score">4.5 von 5</span>
+                                <span class="rating-divider mx-2">|</span>
+                                <span class="rating-count">342 Bewertungen</span>
+                            </div>
+                            <p class="rating-text mt-2 mb-0">Unsere Kunden bewerten uns als herausragend</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer py-4">
+            <div class="container text-center">
+                <p class="small mb-0">&copy; 2025 AKTIEN-MONITOR. Alle Rechte vorbehalten.</p>
+                <p class="small mt-2 disclaimer">Die dargestellten Renditen basieren auf historischen Daten und sind keine Garantie für zukünftige Ergebnisse. Investitionen in Aktien sind mit Risiken verbunden.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    
+    <script>
+        window.addEventListener('load', function() {
+            const highlightValuesFormatted = [
+                "Renditen von bis zu +3.308,59 %",
+                "bis zu +3.362,53 %",
+                "bis zu +6.692,61 %"
+            ];
+            
+            const highlightNumbers = [3308.59, 3362.53, 6692.61];
+            
+            const highlights = document.querySelectorAll('.highlight');
+            
+            if (highlights.length > 0) {
+                const originalTexts = [];
+                highlights.forEach(function(highlight) {
+                    originalTexts.push(highlight.textContent);
+                });
+                
+                highlights.forEach(function(highlight, index) {
+                    const prefixText = index === 0 ? "Renditen von bis zu +" : "bis zu +";
+                    
+                    highlight.setAttribute('data-index', index);
+                    highlight.setAttribute('data-prefix', prefixText);
+                    highlight.setAttribute('data-target', highlightNumbers[index]);
+                    highlight.setAttribute('data-formatted', highlightValuesFormatted[index]);
+                    highlight.setAttribute('data-original', originalTexts[index]);
+                    
+                    highlight.textContent = prefixText + "0,00 %";
+                });
+                
+                function animateHighlight(highlight) {
+                    const index = parseInt(highlight.getAttribute('data-index'));
+                    const prefix = highlight.getAttribute('data-prefix');
+                    const targetValue = parseFloat(highlight.getAttribute('data-target'));
+                    const formattedFinalValue = highlight.getAttribute('data-formatted');
+                    
+                    let startTime = null;
+                    const duration = 2000;
+                    
+                    function updateValue(timestamp) {
+                        if (!startTime) startTime = timestamp;
+                        const elapsed = timestamp - startTime;
+                        const progress = Math.min(elapsed / duration, 1);
+                        
+                        const easeOutQuad = 1 - Math.pow(1 - progress, 2);
+                        
+                        if (progress < 1) {
+                            const currentValue = (targetValue * easeOutQuad).toFixed(2);
+                            
+                            let formattedValue = currentValue.replace('.', ',');
+                            highlight.textContent = prefix + formattedValue + " %";
+                            
+                            requestAnimationFrame(updateValue);
+                            
+                            const pulseScale = 1 + 0.05 * Math.sin(progress * Math.PI * 10);
+                            highlight.style.transform = `scale(${pulseScale})`;
+                            
+                        } else {
+                            highlight.textContent = formattedFinalValue;
+                            highlight.style.transform = 'scale(1)';
+                            highlight.style.boxShadow = "0 0 10px rgba(255, 140, 0, 0.7), 0 0 20px rgba(255, 215, 0, 0.5)";
+                            
+                            highlight.setAttribute('data-animated', 'true');
+                        }
+                    }
+                    
+                    requestAnimationFrame(updateValue);
+                }
+                
+                setTimeout(function() {
+                    highlights.forEach(function(highlight, index) {
+                        setTimeout(function() {
+                            animateHighlight(highlight);
+                        }, index * 300);
+                    });
+                }, 1000);
+                
+                highlights.forEach(function(highlight) {
+                    highlight.addEventListener('mouseenter', function() {
+                        if (highlight.getAttribute('data-animated') === 'true') {
+                            highlight.style.transform = 'scale(1.05)';
+                            highlight.style.boxShadow = '0 0 15px rgba(255, 140, 0, 0.9)';
+                        }
+                    });
+                    
+                    highlight.addEventListener('mouseleave', function() {
+                        if (highlight.getAttribute('data-animated') === 'true') {
+                            highlight.style.transform = 'scale(1)';
+                            highlight.style.boxShadow = "0 0 10px rgba(255, 140, 0, 0.7), 0 0 20px rgba(255, 215, 0, 0.5)";
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html> 
